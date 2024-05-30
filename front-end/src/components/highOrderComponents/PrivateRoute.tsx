@@ -7,7 +7,7 @@ type PrivateRouteProps = {
 };
 
 const PrivateRoute: React.FC<PrivateRouteProps> = ({ element, ...rest }) => {
-  const isLoggedIn = useSelector((state) => state.user !== null);
+  const isLoggedIn = useSelector((state:any) => state.user !== null);
   return isLoggedIn ? <>{element}</> : <Navigate to="/SignIn" replace />;
 };
 
