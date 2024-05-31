@@ -1,0 +1,47 @@
+.categories-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.category {
+  position: relative;
+  padding: 30px;
+  margin-inline: 30px;
+  cursor: pointer;
+}
+
+.category-name {
+  font-weight: bold;
+  font-size: 20px;
+}
+.category:hover {
+  text-decoration: underline black solid 2px;
+}
+.subcategories {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 150%;
+  height: max-content;
+}
+
+.subcategory {
+  padding: 5px;
+}
+
+.subcategoryName {
+  font-weight: bold;
+  font-size: 15px;
+}
+.subcategory:hover {
+  text-decoration: underline black solid 1px;
+}
